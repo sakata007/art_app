@@ -1,0 +1,24 @@
+.headerLogo {
+  height: 100%;
+  width: 50px;
+  margin-left: 2rem;
+  cursor: pointer;
+}
+.logo__h1 {
+  height: 100%;
+  color: aliceblue;
+}
+.logo__a {
+  display: inline-block;
+  height: 100%;
+}
+
+.imageFlame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .imageFlame__image {
+    display: block;
+    object-fit: cover;
+  }
+}

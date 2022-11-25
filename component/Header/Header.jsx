@@ -1,12 +1,15 @@
 import React from "react";
 import styles from "./Header.module.scss";
+import Hamburger from "../Hamburger/Hamburger.jsx";
+import HeaderLogo from "../HeaderLogo/HeaderLogo.jsx";
 
 const Header = () => {
   return (
-    <div>
-      <h1 className={styles.logo}>
-        <a href="#">ロゴ画像</a>
-      </h1>
+    <div className={styles.header}>
+      <div className={styles.header__inner}>
+        <HeaderLogo />
+        <Hamburger />
+      </div>
     </div>
   );
 };
