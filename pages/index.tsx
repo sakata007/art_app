@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Header from "../component/Header/Header.jsx";
 import TopMain from "../component/Main/TopMain.jsx";
+import Footer from "../component/Footer/Footer.jsx";
 
 export default function Home() {
   return (
@@ -16,8 +17,8 @@ export default function Home() {
       <Header />
       <div className={styles.container__box}>
         <TopMain />
-        <footer className={styles.footer}></footer>
       </div>
+      <Footer />
     </div>
   );
 }

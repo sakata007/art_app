@@ -1,0 +1,17 @@
+.imageContainer {
+  aspect-ratio: 100 / 75;
+  width: 90vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 70px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .image {
+    object-fit: contain;
+  }
+}
+// .imageContainer + .imageContainer {
+//   margin-bottom: 20px;
+// }
