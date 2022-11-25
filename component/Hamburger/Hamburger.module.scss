@@ -9,9 +9,6 @@
   cursor: pointer;
   position: absolute;
   right: 1rem;
-  &.primary {
-    background-color: rgb(154, 9, 9);
-  }
 }
 .button__inner {
   display: flex;
@@ -41,6 +38,38 @@
     background-color: rgb(212, 211, 211);
   }
 }
+.opened__li__button {
+  // background-color: aqua;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  .closeButton {
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    .closeButton__inner__line {
+      transition: ease 0.4s;
+      background: rgb(130, 130, 130);
+      width: 30px;
+      height: 2px;
+    }
+    .closeButton__inner__line:nth-child(1) {
+      position: absolute;
+      top: 25px;
+      transform: rotate(45deg);
+    }
+
+    .closeButton__inner__line:nth-child(2) {
+      position: absolute;
+      top: 25px;
+      transform: rotate(-45deg);
+    }
+  }
+}
 
 // アクティブ
 .button.primary {
@@ -57,28 +86,11 @@
   transform: translateX(100%);
   transition: ease 0.6s;
   overflow: auto;
-  height: calc(100vh - 60px);
+  height: 100vh;
   width: 50vw;
 }
 
 .hamburger__nav.hamburger__opened {
   transform: translateX(0);
   opacity: 1;
-}
-.button__inner.closeButton {
-  .button__inner__line:nth-child(1) {
-    position: absolute;
-    top: 25px;
-    transform: rotate(45deg);
-  }
-  .button__inner__line:nth-child(2) {
-    position: relative;
-    opacity: 0;
-  }
-  .button__inner__line:nth-child(3) {
-    position: absolute;
-
-    top: 25px;
-    transform: rotate(-45deg);
-  }
 }
