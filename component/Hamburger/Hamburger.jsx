@@ -10,7 +10,8 @@ const Hamburger = () => {
   return (
     <div className={styles.parent}>
       <button
-        className={`${styles.button} ${isOpenMenu ? "" : ""}`}
+        className={styles.button}
+
         onClick={() => {
           toggleMenu();
         }}
@@ -32,6 +33,17 @@ const Hamburger = () => {
         }`}
       >
         <ul className={styles.opened__ul}>
+          <li className={styles.opened__li__button}>
+            <div
+              className={styles.closeButton}
+              onClick={() => {
+                toggleMenu();
+              }}
+            >
+              <span className={styles.closeButton__inner__line}></span>
+              <span className={styles.closeButton__inner__line}></span>
+            </div>
+          </li>
           <li className={styles.opened__li}>top</li>
           <li className={styles.opened__li}>works</li>
           <li className={styles.opened__li}>store</li>
