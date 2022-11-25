@@ -11,7 +11,6 @@ const Hamburger = () => {
     <div className={styles.parent}>
       <button
         className={styles.button}
-
         onClick={() => {
           toggleMenu();
         }}
