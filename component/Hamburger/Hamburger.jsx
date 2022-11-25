@@ -10,7 +10,7 @@ const Hamburger = () => {
   return (
     <div className={styles.parent}>
       <button
-        className={`${styles.button} ${isOpenMenu ? styles.primary : ""}`}
+        className={`${styles.button} ${isOpenMenu ? "" : ""}`}
         onClick={() => {
           toggleMenu();
         }}
