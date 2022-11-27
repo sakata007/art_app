@@ -8,6 +8,7 @@ const Hamburger = () => {
   };
   return (
     <div className={styles.parent}>
+      {/* ボタンを押すとtoggeleMenuが発火 */}
       <button
         className={styles.button}
         onClick={() => {
@@ -25,6 +26,7 @@ const Hamburger = () => {
         </div>
       </button>
 
+      {/* ナビゲーション　isOpenMenuによってクラスが変わる */}
       <nav
         className={`${styles.hamburger__nav} ${
           isOpenMenu ? styles.hamburger__opened : ""
@@ -46,6 +48,15 @@ const Hamburger = () => {
           <li className={styles.opened__li}>works</li>
           <li className={styles.opened__li}>store</li>
           <li className={styles.opened__li}>profile</li>
+        </ul>
+      </nav>
+
+      <nav className={styles.headerNav__pc}>
+        <ul className={styles.headerNav__ul__pc}>
+          <li className={styles.headerNav__li__pc}>top</li>
+          <li className={styles.headerNav__li__pc}>works</li>
+          <li className={styles.headerNav__li__pc}>store</li>
+          <li className={styles.headerNav__li__pc}>profile</li>
         </ul>
       </nav>
     </div>
