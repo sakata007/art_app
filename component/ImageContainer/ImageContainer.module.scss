@@ -10,8 +10,12 @@
   align-items: center;
   .image {
     object-fit: contain;
+    filter: grayscale(90%);
+    transition: ease 0.6s;
+
+    &.colorful {
+      filter: grayscale(0);
+      // border: red 3px solid;
+    }
   }
 }
-// .imageContainer + .imageContainer {
-//   margin-bottom: 20px;
-// }

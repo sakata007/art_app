@@ -1,4 +1,6 @@
 import Head from "next/head";
+// import { useInView } from "react-intersection-observer";
+
 // import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../component/Header/Header.jsx";
@@ -6,6 +8,10 @@ import TopMain from "../component/Main/TopMain.jsx";
 import Footer from "../component/Footer/Footer.jsx";
 
 export default function Home() {
+  // const { ref, inView } = useInView({
+  //   rootMargin: "10px",
+  //   threshold: [0.5],
+  // });
   return (
     <div>
       <Head>

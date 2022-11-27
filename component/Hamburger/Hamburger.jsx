@@ -5,7 +5,6 @@ const Hamburger = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
   const toggleMenu = () => {
     setIsOpenMenu(!isOpenMenu);
-    // alert("とぐる");
   };
   return (
     <div className={styles.parent}>
