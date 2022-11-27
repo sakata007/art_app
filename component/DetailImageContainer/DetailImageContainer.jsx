@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "./DetailImageContainer.module.scss";
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/scss/image-gallery.scss";
+// import "react-image-gallery/styles/scss/image-gallery.scss";
+// import "./ImageGallery.scss";
 
 const DetailImageContainer = () => {
   const images = [
