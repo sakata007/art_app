@@ -1,0 +1,17 @@
+.detailImageContainer {
+  .mainImageArea {
+    background-color: rgba(255, 0, 0, 0.3);
+    width: 100%;
+    padding: 3em 0;
+  }
+
+  .subImageArea {
+    height: 20vh;
+    background-color: rgba(0, 0, 255, 0.3);
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 3em 2em;
+    margin-bottom: 50px;
+  }
+}

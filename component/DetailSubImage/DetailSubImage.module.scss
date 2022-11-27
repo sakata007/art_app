@@ -1,0 +1,9 @@
+.subImageContainer {
+  aspect-ratio: 100 / 75;
+  width: 25vw;
+  border: blue solid 1px;
+  // margin: 2em 1em;
+  .childrenImage {
+    // margin: 2em auto;
+  }
+}

@@ -1,11 +1,9 @@
 .footer {
-  // position: absolute;
-  // bottom: 0;
-  height: 70px;
+  // flex: 1;
+  height: 70px !important;
   width: 100vw;
   background-color: rgba(86, 85, 85, 0.25);
   color: rgb(255, 255, 100);
-  // padding-left: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
