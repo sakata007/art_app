@@ -3,7 +3,7 @@ import styles from "./DetailImageContainer.module.scss";
 // import DetalMainImage from "../DetailMainImage/DetailMainImage.jsx";
 // import DetalSubImage from "../DetailSubImage/DetailSubImage.jsx";
 import ImageGallery from "react-image-gallery";
-import "react-image-gallery/styles/css/image-gallery.css";
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 const DetailImageContainer = () => {
   const images = [
