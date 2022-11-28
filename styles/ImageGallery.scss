@@ -2,7 +2,7 @@ $ig-small-screen: 768px !default;
 $ig-xsmall-screen: 480px !default;
 $ig-white: #fff !default;
 $ig-black: #000 !default;
-$ig-blue: #ffff64 !default;
+$ig-yellow: #ffff64 !default;
 $ig-background-black: rgba(0, 0, 0, 0.4) !default;
 $ig-transparent: rgba(0, 0, 0, 0) !default;
 $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
@@ -28,7 +28,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
-      color: $ig-blue;
+      color: $ig-yellow;
       .image-gallery-svg {
         transform: scale(1.1);
       }
@@ -37,7 +37,7 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
   &:focus {
     // a11y support
-    outline: 2px solid $ig-blue;
+    outline: 2px solid $ig-yellow;
   }
 }
 
@@ -63,8 +63,10 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     padding: 15px;
 
     .image-gallery-svg {
-      height: 24px;
-      width: 24px;
+      // height: 24px;
+      // width: 24px;
+      height: 18px;
+      width: 18px;
     }
   }
 
@@ -72,8 +74,10 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
     padding: 10px;
 
     .image-gallery-svg {
-      height: 16px;
-      width: 16px;
+      // height: 16px;
+      // width: 16px;
+      height: 10px;
+      width: 10px;
     }
   }
 }
@@ -93,20 +97,24 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   transform: translateY(-50%);
 
   .image-gallery-svg {
-    height: 120px;
+    // height: 120px;
+    height: 50px;
     width: 60px;
   }
 
   @media (max-width: $ig-small-screen) {
     .image-gallery-svg {
-      height: 72px;
+      // height: 72px;
+      height: 35px;
       width: 36px;
     }
   }
 
   @media (max-width: $ig-xsmall-screen) {
+    // 大きいスクリーンの矢印
     .image-gallery-svg {
-      height: 48px;
+      // height: 48px;
+      height: 10px;
       width: 24px;
     }
   }
@@ -268,8 +276,8 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
     &:focus {
       transform: scale(1.2);
-      background: $ig-blue;
-      border: 1px solid $ig-blue;
+      background: $ig-yellow;
+      border: 1px solid $ig-yellow;
     }
 
     &.active {
@@ -280,12 +288,12 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
 
     @media (hover: hover) and (pointer: fine) {
       &:hover {
-        background: $ig-blue;
-        border: 1px solid $ig-blue;
+        background: $ig-yellow;
+        border: 1px solid $ig-yellow;
       }
 
       &.active:hover {
-        background: $ig-blue;
+        background: $ig-yellow;
       }
     }
   }
@@ -392,20 +400,20 @@ $ig-shadow: 0 2px 2px lighten($ig-black, 10%);
   &.active,
   &:focus {
     outline: none;
-    border: 4px solid $ig-blue;
+    border: 4px solid $ig-yellow;
 
     @media (max-width: $ig-small-screen) {
-      border: 3px solid $ig-blue;
+      border: 3px solid $ig-yellow;
     }
   }
 
   @media (hover: hover) and (pointer: fine) {
     &:hover {
       outline: none;
-      border: 4px solid $ig-blue;
+      border: 4px solid $ig-yellow;
 
       @media (max-width: $ig-small-screen) {
-        border: 3px solid $ig-blue;
+        border: 3px solid $ig-yellow;
       }
     }
   }

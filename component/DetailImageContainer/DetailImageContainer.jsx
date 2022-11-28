@@ -1,11 +1,10 @@
 import React from "react";
 import styles from "./DetailImageContainer.module.scss";
 import ImageGallery from "react-image-gallery";
-// import "react-image-gallery/styles/scss/image-gallery.scss";
-// import "./ImageGallery.scss";
 
 const DetailImageContainer = () => {
   const images = [
+    // ここはmap処理でいけそう
     {
       original: "/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg",
       thumbnail: "/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg",
@@ -26,16 +25,6 @@ const DetailImageContainer = () => {
   return (
     <div className={styles.detailImageContainer}>
       <ImageGallery items={images} />
-      {/* <div className={styles.mainImageArea}>
-        <DetalMainImage src="/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg" />
-      </div>
-
-      <div className={styles.subImageArea}>
-        <DetalSubImage src="/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg" />
-        <DetalSubImage src="/84E28BF2-E18F-45A7-BDA5-FB5532D24CAB.jpeg" />
-        <DetalSubImage src="/F6A9D47B-2052-4786-BD47-C10810B612B0.jpeg" />
-        <DetalSubImage src="/877AF359-9F09-4289-915E-96655EFF8157.jpeg" />
-      </div> */}
     </div>
   );
 };

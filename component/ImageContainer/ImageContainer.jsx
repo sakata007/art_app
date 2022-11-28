@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import styles from "./ImageContainer.module.scss";
@@ -15,12 +16,14 @@ const ImageContainer = (props) => {
   console.log(`これはinView→${inView}`);
   return (
     <div ref={ref} className={styles.imageContainer}>
-      <Image
-        className={`${styles.image} ${inView && styles.colorful}`}
-        src={src}
-        width={500}
-        height={500 * 0.75}
-      />
+      <Link href="/detail">
+        <Image
+          className={`${styles.image} ${inView && styles.colorful}`}
+          src={src}
+          width={500}
+          height={500 * 0.75}
+        />
+      </Link>
     </div>
   );
 };

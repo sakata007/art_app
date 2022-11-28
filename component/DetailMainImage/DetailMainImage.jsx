@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./DetailMainImage.module.scss";
+import Link from "next/link";
 
 const DetailMainImage = (props) => {
   const src = props.src;

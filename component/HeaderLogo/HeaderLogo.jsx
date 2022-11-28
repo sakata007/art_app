@@ -1,12 +1,13 @@
 import React from "react";
 import styles from "./HeaderLogo.module.scss";
 import Image from "next/image";
+import Link from "next/link";
 
 const HeaderLogo = () => {
   return (
     <div className={styles.headerLogo}>
       <h1 className={styles.logo__h1}>
-        <a className={styles.logo__a} href="#">
+        <Link className={styles.logo__a} href="/">
           <div className={styles.imageFlame}>
             <Image
               className={styles.imageFlame__image}
@@ -15,7 +16,7 @@ const HeaderLogo = () => {
               height={50}
             />
           </div>
-        </a>
+        </Link>
       </h1>
     </div>
   );
