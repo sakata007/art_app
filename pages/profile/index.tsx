@@ -1,18 +1,10 @@
 import Head from "next/head";
-// import { useInView } from "react-intersection-observer";
-
-// import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Header from "../component/Header/Header.jsx";
-import Top from "../component/Top/Top.jsx";
-import Works from "../component/Works/Works.jsx";
-import Footer from "../component/Footer/Footer.jsx";
+import styles from "../../styles/Home.module.css";
+import Header from "../../component/Header/Header.jsx";
+import Footer from "../../component/Footer/Footer.jsx";
+import Profile from "../../component/Profile/Profile.jsx";
 
 export default function Home() {
-  // const { ref, inView } = useInView({
-  //   rootMargin: "10px",
-  //   threshold: [0.5],
-  // });
   return (
     <div className={styles.art}>
       <Head>
@@ -26,10 +18,10 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Top />
-
       <div className={styles.container__box}>
-        <Works />
+        <main>
+          <Profile />
+        </main>
       </div>
       <Footer />
     </div>

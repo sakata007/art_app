@@ -1,5 +1,5 @@
 .imageContainer {
-  aspect-ratio: 100 / 75;
+  // aspect-ratio: 100 / 75;
   width: 90vw;
   margin-right: auto;
   margin-left: auto;
@@ -15,7 +15,6 @@
 
     &.colorful {
       filter: grayscale(0);
-      // border: red 3px solid;
     }
   }
 }

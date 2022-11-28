@@ -1,8 +1,9 @@
 // ボタン本体
 $length: 40px;
-// .parent {
-//   background-color: red;
-// }
+.parent {
+  // background-color: red;
+  height: 50px;
+}
 .button {
   height: $length;
   width: $length;
@@ -67,7 +68,7 @@ $length: 40px;
   transition: ease 0.6s;
   &:hover {
     background-color: rgb(255, 255, 100);
-    padding-left: 2em;
+    padding-left: 1em;
   }
   .opened__li__List {
     display: block;
@@ -132,6 +133,7 @@ $length: 40px;
     max-width: 600px;
     height: 100%;
     text-align: center;
+    // border: blue solid 1px;
   }
   .headerNav__ul__pc {
     display: flex;
@@ -139,6 +141,7 @@ $length: 40px;
     align-items: center;
     justify-content: space-between;
     transition: ease 0.6s;
+    // border: yellow solid 1px;
   }
   .headerNav__li__pc {
     transition: ease 0.6s;
@@ -147,7 +150,10 @@ $length: 40px;
     font-weight: bold;
     // background-color: red;
     display: block;
-    padding: 1em;
+    // height: 100%;
+    // padding-right: 1em;
+    // padding-left: 1em;
+    padding: 13px;
 
     margin-right: 2em;
     font-size: 3em;
