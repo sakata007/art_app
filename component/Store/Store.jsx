@@ -8,7 +8,7 @@ const Store = () => {
       <div className={styles.storeContainer}>
         <ProductContainer
           src="/C6DFE34C-68D3-46A1-8B5D-B3F141BBA8B9.jpeg"
-          title="product titleproduct titleproduct titleproduct titleproduct title"
+          title="product titleproduct "
           price={1000}
         />
         <ProductContainer
