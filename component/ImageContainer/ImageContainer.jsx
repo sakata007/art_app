@@ -13,15 +13,17 @@ const ImageContainer = (props) => {
     threshold: [0.3],
   });
 
-  console.log(`これはinView→${inView}`);
+  const width = 800;
+
+  // console.log(`これはinView→${inView}`);
   return (
     <div ref={ref} className={styles.imageContainer}>
       <Link href="/detail">
         <Image
           className={`${styles.image} ${inView && styles.colorful}`}
           src={src}
-          width={500}
-          height={500 * 0.75}
+          width={width}
+          height={width * 0.75}
         />
       </Link>
     </div>

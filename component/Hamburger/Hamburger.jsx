@@ -73,7 +73,7 @@ const Hamburger = () => {
               onClick={() => {
                 toggleMenu();
               }}
-              href="/"
+              href="/store"
             >
               store
             </Link>
@@ -84,7 +84,7 @@ const Hamburger = () => {
               onClick={() => {
                 toggleMenu();
               }}
-              href="/"
+              href="/profile"
             >
               profile
             </Link>
@@ -104,8 +104,16 @@ const Hamburger = () => {
               works
             </Link>
           </li>
-          <li className={styles.headerNav__li__pc}>store</li>
-          <li className={styles.headerNav__li__pc}>profile</li>
+          <li className={styles.headerNav__li__pc}>
+            <Link className={styles.headerNav__li__List} href="/store">
+              store
+            </Link>
+          </li>
+          <li className={styles.headerNav__li__pc}>
+            <Link className={styles.headerNav__li__List} href="/profile">
+              profile
+            </Link>
+          </li>
         </ul>
       </nav>
     </div>

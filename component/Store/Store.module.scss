@@ -1,0 +1,17 @@
+.h1 {
+  color: white;
+  font-size: 10em;
+}
+.store {
+  color: rgba(255, 255, 100);
+}
+
+.storeContainer {
+  margin-right: auto;
+  margin-left: auto;
+  // background-color: rgba(0, 255, 255, 0.1);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 90%;
+}

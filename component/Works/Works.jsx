@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "./TopMain.module.scss";
+import styles from "./Works.module.scss";
 import ImageContainer from "../ImageContainer/ImageContainer.jsx";
 
-const TopMain = () => {
+const Works = () => {
   return (
-    <div className={styles.topMain}>
+    <div className={styles.Works}>
       <ImageContainer src="/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg" />
       <ImageContainer src="/97D94130-B8A4-49D5-860F-C56CBABA7471.jpeg" />
       <ImageContainer src="/9A94A1B6-A141-4A40-A129-FC58F912E931.jpeg" />
@@ -13,4 +13,4 @@ const TopMain = () => {
   );
 };
 
-export default TopMain;
+export default Works;
