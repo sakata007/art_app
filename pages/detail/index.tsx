@@ -21,7 +21,11 @@ export default function Home() {
       <Header />
       <div className={styles.container__box}>
         <main>
-          <DetailImageContainer />
+          <DetailImageContainer
+          // imgA="/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg"
+          // imgB="/84E28BF2-E18F-45A7-BDA5-FB5532D24CAB.jpeg"
+          // imgC="/F6A9D47B-2052-4786-BD47-C10810B612B0.jpeg"
+          />
           <BackButton />
         </main>
       </div>

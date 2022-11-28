@@ -3,8 +3,22 @@ import styles from "./DetailImageContainer.module.scss";
 import ImageGallery from "react-image-gallery";
 
 const DetailImageContainer = () => {
+  // const { imgA, imgB, imgC } = props;
+
   const images = [
     // ここはmap処理でいけそう
+    // {
+    //   original: { imgA },
+    //   thumbnail: { imgA },
+    // },
+    // {
+    //   original: { imgB },
+    //   thumbnail: { imgB },
+    // },
+    // {
+    //   original: { imgC },
+    //   thumbnail: { imgC },
+    // },
     {
       original: "/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg",
       thumbnail: "/08B65F5B-B105-4D6B-88A0-03D642D12AE6.jpeg",

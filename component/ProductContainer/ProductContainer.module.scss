@@ -1,6 +1,4 @@
 .productContainer {
-  // width: 100%;
-  // border: blue 1px solid;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,18 +7,15 @@
     object-fit: cover;
     transition: ease 0.3s;
     border-radius: 1em;
-    // filter: grayscale(50%);
 
     &:hover {
       box-shadow: white 1px;
       cursor: pointer;
-      // filter: grayscale(0);
       box-shadow: 0 0 30px rgba(255, 255, 100, 0.7);
     }
   }
   .productText {
     max-width: 500px;
-    // height: 7em;
     padding-top: 0.3em;
     padding-bottom: 1em;
     padding-left: 0.5em;

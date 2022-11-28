@@ -12,10 +12,9 @@ const ImageContainer = (props) => {
     rootMargin: "-10%",
     threshold: [0.3],
   });
-
+  // 画像の幅を定義
   const width = 800;
 
-  // console.log(`これはinView→${inView}`);
   return (
     <div ref={ref} className={styles.imageContainer}>
       <Link href="/detail">

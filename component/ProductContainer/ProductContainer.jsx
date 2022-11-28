@@ -4,6 +4,7 @@ import styles from "./ProductContainer.module.scss";
 
 const ProductContainer = (props) => {
   const { src, title, price } = props;
+  // 画像の幅を定義
   const width = 500;
 
   return (

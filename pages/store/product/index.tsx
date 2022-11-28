@@ -1,13 +1,9 @@
 import Head from "next/head";
-// import { useInView } from "react-intersection-observer";
-
-// import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Header from "../component/Header/Header.jsx";
-import Top from "../component/Top/Top.jsx";
-import Works from "../component/Works/Works.jsx";
-import Footer from "../component/Footer/Footer.jsx";
-
+import styles from "../../../styles/Home.module.css";
+import Header from "../../../component/Header/Header.jsx";
+import Footer from "../../../component/Footer/Footer.jsx";
+// import Store from "../../../component/Store/Store.jsx";
+import ProductLayout from "../../../component/ProductLayout/ProductLayout.jsx";
 export default function Home() {
   return (
     <div className={styles.art}>
@@ -22,10 +18,10 @@ export default function Home() {
       </Head>
 
       <Header />
-      <Top />
-
       <div className={styles.container__box}>
-        <Works />
+        <main>
+          <ProductLayout />
+        </main>
       </div>
       <Footer />
     </div>
