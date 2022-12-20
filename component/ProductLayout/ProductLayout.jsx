@@ -25,8 +25,13 @@ const ProductLayout = () => {
           </section>
         </div>
       </div>
+      {/* コンテナに入っておらず、デザイン崩れ発生中 */}
       <div className={styles.contact}>
         ご注文はInstagramのDMからお問い合わせください。
+        <br />
+        <span className={styles.contact__instagram}>
+          zzzzzzzzzzzzzzz.instagram.com
+        </span>
       </div>
     </div>
   );
