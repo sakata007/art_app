@@ -1,4 +1,4 @@
-$length: 40px;
+$length: 30px;
 .parent {
   height: 50px;
 }
@@ -27,13 +27,13 @@ $length: 40px;
   justify-content: space-between;
   align-items: center;
   width: 70%;
-  height: 50%;
+  height: 40%;
 }
 .button__inner__line {
   transition: ease 0.4s;
   background: rgb(255, 255, 255);
-  width: calc($length * 0.6);
-  height: 2px;
+  width: calc($length * 0.4);
+  height: 1px;
 }
 
 // リスト関係
@@ -83,8 +83,8 @@ $length: 40px;
   flex-direction: row;
   justify-content: flex-end;
   .closeButton {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
